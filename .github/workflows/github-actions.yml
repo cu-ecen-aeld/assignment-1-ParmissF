@@ -17,7 +17,6 @@ jobs:
     full-test:
         runs-on: self-hosted
         steps:
-          - uses: actions/checkout@v2
           - name: Checkout submodules
             run : git submodule update --init --recursive
           - name: Run full test
